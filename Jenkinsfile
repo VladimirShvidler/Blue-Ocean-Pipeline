@@ -13,7 +13,7 @@ pipeline {
         stash(name: 'build-test-artifacts', includes: ' **/target/surefire-reports/TEST-*.xml,target/*.jar.')
       }
     }
-    stage('Report & Publish') {
+    stage('Report & Publish ') {
       agent {
         node {
           label 'docker'
